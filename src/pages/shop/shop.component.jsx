@@ -11,12 +11,9 @@ class ShopPage extends Component {
     }
   }
 
-  componentDidMount() {
-
-  }
-
   render() {
     const { collections } = this.state;
+
     return (
       <div className='shop-page'>
         {
