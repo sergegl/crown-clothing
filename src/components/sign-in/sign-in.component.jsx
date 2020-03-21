@@ -19,13 +19,13 @@ class SignIn extends Component {
     event.preventDefault();
 
     this.setState({ email: '', password: '' });
-  }
+  };
 
   handleChange = event => {
     const { value, name } = event.target;
 
     this.setState({ [name]: value });
-  }
+  };
 
   render() {
     return (
@@ -55,11 +55,11 @@ class SignIn extends Component {
           <div className="buttons">
             <CustomButton type='submit'>
               Sign In
-          </CustomButton>
+            </CustomButton>
 
             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
               Sign In With Google
-          </CustomButton>
+            </CustomButton>
           </div>
         </form>
       </div>
